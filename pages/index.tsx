@@ -14,7 +14,7 @@ import { fetchExperiences } from '../utils/fetchExperiences'
 import { fetchSkills } from '../utils/fetchSkills'
 import { fetchProjects } from '../utils/fetchProjects'
 import { fetchSocials } from '../utils/fetchSocials'
-
+import Image from 'next/image'
 
 type Props = {
   pageInfo : PageInfo;
@@ -63,7 +63,7 @@ export default function Home({pageInfo, experiences, projects, skills, socials}:
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://i.pinimg.com/280x280_RS/01/43/2c/01432c796d859e4fff32cce75c43aa55.jpg"
               alt=""
