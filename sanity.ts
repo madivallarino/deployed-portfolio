@@ -7,6 +7,7 @@ export const config = {
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
     apiVersion: "2021-03-25",
     useCdn: process.env.NODE_ENV === "production",
+    staticPageGenerationTimeout: 300,
 }
 
 export const sanityClient = createClient( config);
