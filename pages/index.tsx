@@ -66,6 +66,8 @@ export default function Home({pageInfo, experiences, projects, skills, socials}:
             <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://i.pinimg.com/280x280_RS/01/43/2c/01432c796d859e4fff32cce75c43aa55.jpg"
+              width={10}
+              height={10}
               alt=""
             />
           </div>

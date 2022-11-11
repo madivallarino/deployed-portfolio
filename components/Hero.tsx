@@ -7,7 +7,7 @@ import { urlFor } from '../sanity';
 import Image from 'next/image'
 
 type Props = {
-  pageInfo: PageInfo
+  pageInfo: PageInfo;
 }
 
 function Hero({pageInfo}: Props) {
@@ -23,6 +23,8 @@ function Hero({pageInfo}: Props) {
         <Image 
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
           src={urlFor(pageInfo.heroImage).url()} 
+          width={32}
+          height={32}
           alt=""
          />
          <div className="z-20">

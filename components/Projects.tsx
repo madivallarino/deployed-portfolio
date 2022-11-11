@@ -43,6 +43,8 @@ function Projects({projects}: Props) {
                           <Image 
                            className="h-8 w-10"
                            key={technology._id}
+                           width={10}
+                           height={8}
                            src={urlFor(technology.image).url()}
                            alt=""
                          />
