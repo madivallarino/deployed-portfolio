@@ -17,7 +17,7 @@ import { fetchSocials } from '../utils/fetchSocials'
 import Image from 'next/image'
 
 type Props = {
-  pageInfo: PageInfo[];
+  pageInfo: PageInfo;
   experiences: Experience[];
   skills: Skill[];
   projects: Project[];
@@ -79,7 +79,7 @@ export default function Home({pageInfo, experiences, projects, skills, socials}:
 
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo[] = await fetchPageInfo();
+  const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();
