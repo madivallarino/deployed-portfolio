@@ -9,8 +9,9 @@ export const fetchPageInfo = async () => {
   if (!res.ok) {
     console.log(res.statusText);
   }
+  
+  const data = res.json();
 
-  const data = await res.json();
   const pageInfo: PageInfo = data.pageInfo;
 
   //   console.log("fetching", pageInfo);
