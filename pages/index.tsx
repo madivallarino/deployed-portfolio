@@ -17,7 +17,7 @@ import { fetchSocials } from '../utils/fetchSocials'
 import Image from 'next/image'
 
 type Props = {
-  pageInfo : PageInfo;
+  pageInfo: PageInfo;
   experiences: Experience[];
   skills: Skill[];
   projects: Project[];
